@@ -1,0 +1,1 @@
+{"name":"Local: Prime Sum","url":"c:\\Users\\Dev\\Desktop\\competitive programming\\Prime Sum.cpp","tests":[{"id":1649424403793,"input":"8\n7 15\n3 5\n3 2\n1 2\n6 8\n5 7\n50 55\n14 21","output":"0\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dev\\Desktop\\competitive programming\\Prime Sum.cpp","group":"local","local":true}

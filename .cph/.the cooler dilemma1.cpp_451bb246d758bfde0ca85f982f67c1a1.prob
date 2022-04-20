@@ -1,0 +1,1 @@
+{"name":"Local: the cooler dilemma1","url":"c:\\Users\\Dev\\Desktop\\competitive programming\\the cooler dilemma1.cpp","tests":[{"id":1649415584718,"input":"3\n5 10 1\n5 10 2\n5 10 3","output":"YES\nNO\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dev\\Desktop\\competitive programming\\the cooler dilemma1.cpp","group":"local","local":true}
