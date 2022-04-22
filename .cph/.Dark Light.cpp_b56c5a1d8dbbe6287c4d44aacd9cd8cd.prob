@@ -1,0 +1,1 @@
+{"name":"Local: Dark Light","url":"c:\\Users\\Dev\\Desktop\\competitive programming\\Dark Light.cpp","tests":[{"id":1650466317541,"input":"5\n4 0\n0 1\n3 1\n7 1\n8 1\n","output":"Off\nOn\nAmbiguous\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dev\\Desktop\\competitive programming\\Dark Light.cpp","group":"local","local":true}
