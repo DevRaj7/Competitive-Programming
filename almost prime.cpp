@@ -28,26 +28,36 @@ using namespace std;
 #define imin INT_MIN
 #define exp 1e9
 #define sz(x) (int((x).size()))
+// int n, i, j, ans = 0;
+// 	scanf("%d", &n);
+// 	for(i = 2; i <= n; i++) {
+// 		if(!a[i])
+// 			for(j = i; j <= n; j += i)
+// 				a[j]++;
+// 		if(a[i] == 2) ans++;
+// 	}
+// 	printf("%d\n", ans);
+int a[10001];
 int32_t main()
 {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
-int ttt; cin >> ttt;
+int ttt; 
+ttt=1;
 while(ttt--) {
-    double n,x;
-    cin>>n>>x;
-    vector<double> v(n);
-    for(int i=0;i<n;i++)
-    {
-        int q;
-        cin>>q;
-        v[i]=q;
-    }
-    sort(all(v));
-    
-    if(v[0]==1)
-    
-    }
+    int n;
+    cin>>n;
+
+int ans=0;
+for (int i = 2; i <= n; i++) {
+    if (!a[i]) 
+        for (int j = i ; j <= n; j += i)
+           a[j]++;
+            if(a[i]==2)
+            ans++; 
+}
+cout<<ans;
+
 }
 return 0;
 }

@@ -1,0 +1,1 @@
+{"name":"Local: GCD and LCM","url":"c:\\Users\\Dev\\Desktop\\competitive programming\\GCD and LCM.cpp","tests":[{"id":1650707047885,"input":"3 \n120 140\n10213 312\n10 30","output":"20 840\n1 3186456\n10 30"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dev\\Desktop\\competitive programming\\GCD and LCM.cpp","group":"local","local":true}

@@ -32,22 +32,30 @@ int32_t main()
 {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
-int ttt; cin >> ttt;
+int ttt=1;
 while(ttt--) {
-    double n,x;
+    int n,x;
     cin>>n>>x;
-    vector<double> v(n);
-    for(int i=0;i<n;i++)
+vector<int> v(n+1);
+for(int i=1;i<=n;i++)
+{
+    cin>>v[i];
+}
+int dp[n+1][x+1];
+for(int i=1;i<=n;i++)
+{
+    for(int sum=0;sum<=x;sum++)
     {
-        int q;
-        cin>>q;
-        v[i]=q;
+        if(sum==0)
+        dp[i][sum]=1;
+        else{
+            int option1=(i==1)?0:dp[i-1][sum];
+            int option2=(sum<v[i])?0:dp[i][sum-v[i]];
+            dp[i][sum]=(option1+option2)%MOD;
+        }
     }
-    sort(all(v));
-    
-    if(v[0]==1)
-    
-    }
+}
+cout<<dp[n][x];
 }
 return 0;
 }

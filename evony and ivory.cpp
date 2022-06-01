@@ -32,22 +32,23 @@ int32_t main()
 {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
-int ttt; cin >> ttt;
-while(ttt--) {
-    double n,x;
-    cin>>n>>x;
-    vector<double> v(n);
-    for(int i=0;i<n;i++)
+// int ttt; cin >> ttt;
+// while(ttt--) {
+    ll a,b,c;
+    cin>>a>>b>>c;
+   bool flg = false;
+    for (ll i = 0; i <= c; i += a)
     {
-        int q;
-        cin>>q;
-        v[i]=q;
+        if ((c - i) % b == 0)
+        {
+            flg = true;
+            break;
+        }
     }
-    sort(all(v));
-    
-    if(v[0]==1)
-    
-    }
-}
+    if (flg)
+        cout << "Yes\n";
+    else
+        cout << "No\n";
+ 
 return 0;
 }

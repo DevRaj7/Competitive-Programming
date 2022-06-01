@@ -28,26 +28,27 @@ using namespace std;
 #define imin INT_MIN
 #define exp 1e9
 #define sz(x) (int((x).size()))
+long long gcd(int a,int b)
+{
+    if(b==0)
+    return a;
+    else return gcd(b,a%b);
+}
 int32_t main()
 {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 int ttt; cin >> ttt;
 while(ttt--) {
-    double n,x;
-    cin>>n>>x;
-    vector<double> v(n);
-    for(int i=0;i<n;i++)
-    {
-        int q;
-        cin>>q;
-        v[i]=q;
-    }
-    sort(all(v));
-    
-    if(v[0]==1)
-    
-    }
+    long long a,b,g,l;
+    cin>>a>>b;
+    if(a>b)
+    { g=gcd(a,b);}
+    else
+g=gcd(b,a);
+     l=a/g*b;
+    cout<<g<<" "<<l<<"\n";
+
 }
 return 0;
 }

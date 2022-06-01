@@ -1,0 +1,1 @@
+{"name":"Local: Six Friends","url":"c:\\Users\\Dev\\Desktop\\competitive programming\\Six Friends.cpp","tests":[{"id":1650627317334,"input":"3\n10 15\n6 8\n4 8","output":"30\n16\n12"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Dev\\Desktop\\competitive programming\\Six Friends.cpp","group":"local","local":true}

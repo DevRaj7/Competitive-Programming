@@ -34,20 +34,15 @@ ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 int ttt; cin >> ttt;
 while(ttt--) {
-    double n,x;
-    cin>>n>>x;
-    vector<double> v(n);
-    for(int i=0;i<n;i++)
-    {
-        int q;
-        cin>>q;
-        v[i]=q;
-    }
-    sort(all(v));
-    
-    if(v[0]==1)
-    
-    }
+    int a,b;
+    cin>>a>>b;
+    a=10*a;
+    b=b*5;
+    if(a==b)
+    cout<<"ANY"<<"\n";
+    else if(a>b)
+    cout<<"FIRST"<<"\n";
+    else cout<<"SECOND"<<"\n";
 }
 return 0;
 }

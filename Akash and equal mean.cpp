@@ -34,20 +34,38 @@ ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 int ttt; cin >> ttt;
 while(ttt--) {
-    double n,x;
-    cin>>n>>x;
+    long long n;
+    cin>>n;
     vector<double> v(n);
     for(int i=0;i<n;i++)
     {
-        int q;
-        cin>>q;
-        v[i]=q;
+        int x;
+        cin>>x;
+        v[i]=x;
     }
-    sort(all(v));
-    
-    if(v[0]==1)
-    
+    double sum=accumulate(all(v),0);
+   double mean=(double)sum/n;
+   mean=mean*2;
+   if(mean!=(int)mean)
+   cout<<"0"<<"\n";
+   else{
+    long ans=0;
+    unordered_map<double,double> m;
+    double p,q;
+    int x=(int)mean;
+    for(long long i=0;i<n;i++)
+    {
+         p=v[i];
+        q=x-p;
+        if(m.find(q)!=m.end())
+        {
+            ans+=m[q];
+        }
+        m[p]++;
     }
+    cout<<ans<<"\n";
+   }
+
 }
 return 0;
 }

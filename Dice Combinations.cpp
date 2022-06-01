@@ -32,22 +32,21 @@ int32_t main()
 {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
-int ttt; cin >> ttt;
+int ttt=1;
 while(ttt--) {
-    double n,x;
-    cin>>n>>x;
-    vector<double> v(n);
-    for(int i=0;i<n;i++)
+    ll n;
+    cin>>n;
+    vector<ll> dp(n+1,0);
+    dp[0]=1;
+    for(int i=1;i<=n;i++)
     {
-        int q;
-        cin>>q;
-        v[i]=q;
+        for(int x=1;x<=6;x++)
+        {
+            if(x>i) break;
+            dp[i]=(dp[i]+dp[i-x])%MOD;
+        }
     }
-    sort(all(v));
-    
-    if(v[0]==1)
-    
-    }
+    cout<<dp[n];
 }
 return 0;
 }

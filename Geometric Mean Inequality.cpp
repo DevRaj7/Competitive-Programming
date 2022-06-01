@@ -34,20 +34,33 @@ ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 int ttt; cin >> ttt;
 while(ttt--) {
-    double n,x;
-    cin>>n>>x;
-    vector<double> v(n);
+      int n;
+    cin>>n;
+    vi v(n);
     for(int i=0;i<n;i++)
     {
-        int q;
-        cin>>q;
-        v[i]=q;
+        int x;
+        cin>>x;
+        v[i]=x;
     }
-    sort(all(v));
+    int cntpos=count(all(v),1);
+    int cntneg=count(all(v),-1);
+   if(cntpos&1)
+      {
+          if(cntneg>=cntpos-1&&cntneg<=cntpos+1)
+          cout<<"Yes"<<"\n";
+          else cout<<"No"<<"\n";
+
+      }
+      else{
+          if(cntneg>=cntpos-2&&cntneg<=cntpos+2)
+          cout<<"Yes"<<"\n";
+          else cout<<"No"<<"\n";
+      }
+
+        
+   
     
-    if(v[0]==1)
-    
-    }
 }
 return 0;
 }

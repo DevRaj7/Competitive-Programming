@@ -32,22 +32,40 @@ int32_t main()
 {
 ios_base::sync_with_stdio(false);
 cin.tie(NULL);
-int ttt; cin >> ttt;
-while(ttt--) {
-    double n,x;
-    cin>>n>>x;
-    vector<double> v(n);
+
+    int n;
+    cin>>n;
+    bool grid[n][n];
     for(int i=0;i<n;i++)
     {
-        int q;
-        cin>>q;
-        v[i]=q;
+        for(int j=0;j<n;j++)
+        {
+            char ch;
+            cin>>ch;
+          if(ch=='.')
+          grid[i][j]=0;
+          else grid[i][j]=1;
+        }
     }
-    sort(all(v));
-    
-    if(v[0]==1)
-    
-    }
-}
+  int dp[n][n];
+ for(int i=n-1;i>=0;i--)
+ {
+     for(int j=n-1;j>=0;j--)
+     {    
+         if(i==n-1&&j==n-1)
+         dp[i][j]=1;
+         else{
+         int option1=(i==n-1)?0:dp[i+1][j];
+         int option2=(j==n-1)?0:dp[i][j+1];
+         dp[i][j]=(option1+option2)%MOD;
+         if(grid[i][j]==1)
+         dp[i][j]=0;
+         }
+     }
+ }
+ if(grid[n-1][n-1]==1)
+ cout<<0;
+ else
+cout<<dp[0][0];
 return 0;
 }

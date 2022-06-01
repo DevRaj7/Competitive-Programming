@@ -34,20 +34,12 @@ ios_base::sync_with_stdio(false);
 cin.tie(NULL);
 int ttt; cin >> ttt;
 while(ttt--) {
-    double n,x;
-    cin>>n>>x;
-    vector<double> v(n);
-    for(int i=0;i<n;i++)
-    {
-        int q;
-        cin>>q;
-        v[i]=q;
-    }
-    sort(all(v));
-    
-    if(v[0]==1)
-    
-    }
+    int x;
+    cin>>x;
+    x/=10;
+    if(x>100)
+    cout<<x<<"\n";
+    else cout<<100<<"\n";
 }
 return 0;
 }
